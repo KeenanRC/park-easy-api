@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 const request = require('request')
-
+/*
 describe('User Register', () => {
     const url = 'http://localhost:3001/register'
     it('returns success equal to false if duplicate username provided', (done) => {
@@ -25,7 +25,7 @@ describe('User Register', () => {
         })
     })
 })
-
+*/
 describe('Setting items', () => {
     const url = 'http://localhost:3001/settingItem'
     it('returns success equal to true if returns setting items', (done) => {
@@ -36,3 +36,15 @@ describe('Setting items', () => {
         })
     })
 })
+
+/*
+describe('This test should fail', () => {
+   
+    it('Fail?!', () => {
+            expect(1).to.equal(1)
+          
+    })
+})
+
+
+*/
