@@ -10,7 +10,10 @@ exports.getSettingItems = (req, res) => {
 }
 
 exports.addSettingItem = (req, res) => {
-    SettingItem.create({ name: req.body.name, type: req.body.type, default: req.body.default }, (err, record) => {
+    const settingName = req.body.name
+    const settingType = req.body.type
+    const settingDefault = req.body.default
+    SettingItem.create({ name: settingName, type: settingType, default: settingDefault }, (err, record) => {
         if (err) {
             return res.json({ success: false, err: err })
         }

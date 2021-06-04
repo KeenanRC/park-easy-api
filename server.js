@@ -56,6 +56,9 @@ app.use('/', userSettingRoute)
 const authRoute = require('./routes/authRoute')
 app.use('/', authRoute)
 
+const feedbackRoute = require('./routes/feedbackRoute')
+app.use('/', feedbackRoute)
+
 app.use((err, req, res, next) => {
     Utility.getLogger('Route').error('Invalid data received')
     // Invalid json string
